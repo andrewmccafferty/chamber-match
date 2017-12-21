@@ -1,0 +1,18 @@
+version: '2'
+services:
+  webapp:
+    ports:
+      - 8080:8080
+    build:
+      context: ./web
+      dockerfile: web.dockerfile
+      args:
+        buildno: 1
+  api:
+    ports:
+      - 3000:80
+    build:
+      context: ./api
+      dockerfile: api.dockerfile
+      args:
+        buildno: 2
