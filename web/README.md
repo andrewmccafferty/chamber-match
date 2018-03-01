@@ -6,5 +6,5 @@ Bootstrapped with create-react-app and redux, redux-thunk and react-router with 
 
 ```
 $ npm install
-$ npm start
+$ npm run dev-server
 ``` 
